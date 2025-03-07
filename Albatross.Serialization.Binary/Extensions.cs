@@ -4,7 +4,7 @@ using System.IO;
 using System.Runtime.CompilerServices;
 using System.Threading;
 
-namespace Albatross.Serialization.MessagePack {
+namespace Albatross.Serialization.Binary {
 	public static class Extensions {
 		public static async IAsyncEnumerable<Record> ReadArrayAsync<Record>(this Stream stream, MessagePackSerializerOptions options, [EnumeratorCancellation] CancellationToken cancellationToken) {
 			var reader = new MessagePackStreamReader(stream);

@@ -3,8 +3,6 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 17
 VisualStudioVersion = 17.8.34316.72
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Albatross.Serialization", "Albatross.Serialization\Albatross.Serialization.csproj", "{97F08A2E-E982-45BA-81E2-5CC0FF48E5FC}"
-EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution Items", "{DD9E0809-642D-4FD0-B71B-B9CEF23A0961}"
 	ProjectSection(SolutionItems) = preProject
 		.editorconfig = .editorconfig
@@ -20,20 +18,34 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution 
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Albatross.Serialization.Test", "Albatross.Serialization.Test\Albatross.Serialization.Test.csproj", "{5B874566-9918-4BC1-9835-1906EB9917A3}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Albatross.Serialization.Binary", "Albatross.Serialization.Binary\Albatross.Serialization.Binary.csproj", "{797F88E4-4835-41CC-AED3-316E0D753C29}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Albatross.Serialization.Yaml", "Albatross.Serialization.Yaml\Albatross.Serialization.Yaml.csproj", "{76173BB6-582F-48E4-8397-F6861AFFCD3D}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Albatross.Serialization.Json", "Albatross.Serialization.Json\Albatross.Serialization.Json.csproj", "{F087E457-0ECD-4CE9-8DB2-4F8B449E365F}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
 		Release|Any CPU = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(ProjectConfigurationPlatforms) = postSolution
-		{97F08A2E-E982-45BA-81E2-5CC0FF48E5FC}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{97F08A2E-E982-45BA-81E2-5CC0FF48E5FC}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{97F08A2E-E982-45BA-81E2-5CC0FF48E5FC}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{97F08A2E-E982-45BA-81E2-5CC0FF48E5FC}.Release|Any CPU.Build.0 = Release|Any CPU
 		{5B874566-9918-4BC1-9835-1906EB9917A3}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
 		{5B874566-9918-4BC1-9835-1906EB9917A3}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{5B874566-9918-4BC1-9835-1906EB9917A3}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{5B874566-9918-4BC1-9835-1906EB9917A3}.Release|Any CPU.Build.0 = Release|Any CPU
+		{797F88E4-4835-41CC-AED3-316E0D753C29}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{797F88E4-4835-41CC-AED3-316E0D753C29}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{797F88E4-4835-41CC-AED3-316E0D753C29}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{797F88E4-4835-41CC-AED3-316E0D753C29}.Release|Any CPU.Build.0 = Release|Any CPU
+		{76173BB6-582F-48E4-8397-F6861AFFCD3D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{76173BB6-582F-48E4-8397-F6861AFFCD3D}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{76173BB6-582F-48E4-8397-F6861AFFCD3D}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{76173BB6-582F-48E4-8397-F6861AFFCD3D}.Release|Any CPU.Build.0 = Release|Any CPU
+		{F087E457-0ECD-4CE9-8DB2-4F8B449E365F}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{F087E457-0ECD-4CE9-8DB2-4F8B449E365F}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{F087E457-0ECD-4CE9-8DB2-4F8B449E365F}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{F087E457-0ECD-4CE9-8DB2-4F8B449E365F}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

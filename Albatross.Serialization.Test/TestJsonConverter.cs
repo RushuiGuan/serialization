@@ -1,4 +1,5 @@
 ﻿using Albatross.Reflection;
+using Albatross.Serialization.Json;
 using System.Text.Json;
 using System.Text.Json.Serialization;
 using Xunit;

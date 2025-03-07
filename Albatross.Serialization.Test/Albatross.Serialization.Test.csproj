@@ -22,6 +22,8 @@
 		</PackageReference>
 	</ItemGroup>
 	<ItemGroup>
-		<ProjectReference Include="..\Albatross.Serialization\Albatross.Serialization.csproj" />
+		<ProjectReference Include="..\Albatross.Serialization.Binary\Albatross.Serialization.Binary.csproj" />
+		<ProjectReference Include="..\Albatross.Serialization.Json\Albatross.Serialization.Json.csproj" />
+		<ProjectReference Include="..\Albatross.Serialization.Yaml\Albatross.Serialization.Yaml.csproj" />
 	</ItemGroup>
 </Project>

@@ -5,7 +5,7 @@ using System.Diagnostics;
 using System.Text.Json;
 using System.Text.Json.Serialization;
 
-namespace Albatross.Serialization {
+namespace Albatross.Serialization.Json {
 	public class JsonEnumTextConverter<T> : JsonConverter<T> where T : struct {
 		Dictionary<string, Map> dict = new Dictionary<string, Map>();
 		class Map {

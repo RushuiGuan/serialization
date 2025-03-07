@@ -1,6 +1,7 @@
 ﻿using System;
 using System.Text.Json.Serialization;
 using System.Text.Json;
+using Albatross.Serialization.Json;
 
 namespace Albatross.Serialization.Test {
 	[JsonConverter(typeof(JsonStringEnumConverter))]

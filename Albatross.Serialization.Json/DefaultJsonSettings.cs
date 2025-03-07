@@ -2,7 +2,7 @@
 using System.Text.Json;
 using System.Text.Json.Serialization;
 
-namespace Albatross.Serialization {
+namespace Albatross.Serialization.Json {
 	/// <summary>
 	/// Default json serialization option used by webapi and http clients
 	///  * default

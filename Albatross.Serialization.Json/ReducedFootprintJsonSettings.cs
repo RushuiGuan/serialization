@@ -2,7 +2,7 @@
 using System.Text.Json;
 using System.Text.Json.Serialization;
 
-namespace Albatross.Serialization {
+namespace Albatross.Serialization.Json {
 	/// <summary>
 	/// Reduced footprint serialization option used by applications only where sender and receiver are both created internally.
 	/// * default

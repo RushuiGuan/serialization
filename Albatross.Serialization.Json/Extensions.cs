@@ -6,7 +6,7 @@ using System.IO;
 using System.Text.Json;
 using System.Text.Json.Serialization;
 
-namespace Albatross.Serialization {
+namespace Albatross.Serialization.Json {
 	public static class Extensions {
 		static void ApplyJsonValue(Utf8JsonWriter writer, JsonElement src, JsonElement value, JsonSerializerOptions? options = null) {
 			if (value.ValueKind == JsonValueKind.Undefined) {

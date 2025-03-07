@@ -17,7 +17,7 @@ namespace Albatross.Serialization.Test {
 		public void RunTestCases(string src, string value, string expected) {
 			var srcValue = JsonSerializer.Deserialize<JsonElement>(src);
 			var overrideValue = JsonSerializer.Deserialize<JsonElement>(value);
-			var result = Albatross.Serialization.Extensions.ApplyJsonValue(srcValue, overrideValue);
+			var result = Albatross.Serialization.Json.Extensions.ApplyJsonValue(srcValue, overrideValue);
 			string text = JsonSerializer.Serialize(result);
 			Assert.Equal(expected, text);
 		}

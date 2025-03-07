@@ -1,8 +1,4 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Text;
-
-namespace Albatross.Serialization {
+﻿namespace Albatross.Serialization.Json {
 	public static class ContentTypes {
 		public const string Json = "application/json";
 		public const string Form = "application/x-www-form-urlencoded";

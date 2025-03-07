@@ -2,7 +2,7 @@
 using System.Text.Json.Serialization;
 using System.Text.Json;
 
-namespace Albatross.Serialization {
+namespace Albatross.Serialization.Json {
 	/// <summary>
 	/// This converter is useful to provided backward compatibility when the enum value is not found.
 	/// </summary>
