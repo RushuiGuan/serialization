@@ -13,19 +13,14 @@ namespace Albatross.Serialization.Json {
 	///		* ignore when writing default
 	/// </summary>
 	public class ReducedFootprintJsonSettings : IJsonSettings {
-		public JsonSerializerOptions Default { get; private set; }
-		public JsonSerializerOptions Alternate { get; private set; }
+		public JsonSerializerOptions Value { get; private set; }
 		public ReducedFootprintJsonSettings() {
-			Default = new JsonSerializerOptions {
+			Value = new JsonSerializerOptions {
 				PropertyNamingPolicy = JsonNamingPolicy.CamelCase,
-				DefaultIgnoreCondition = JsonIgnoreCondition.WhenWritingDefault,
-			};
-			Alternate = new JsonSerializerOptions {
-				PropertyNamingPolicy = null,
 				DefaultIgnoreCondition = JsonIgnoreCondition.WhenWritingDefault,
 			};
 		}
 		readonly static Lazy<ReducedFootprintJsonSettings> lazy = new Lazy<ReducedFootprintJsonSettings>();
-		public static ReducedFootprintJsonSettings Value => lazy.Value;
+		public static IJsonSettings Instance => lazy.Value;
 	}
 }

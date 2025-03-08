@@ -50,22 +50,22 @@ namespace Albatross.Serialization.Test {
 		[Fact]
 		public void TestEnumUnknownTextValueDeserialization() {
 			var text = "{\"textType\":\"xxx\"}";
-			var obj = System.Text.Json.JsonSerializer.Deserialize<Test>(text, CustomJsonSettings.Value.Default);
+			var obj = System.Text.Json.JsonSerializer.Deserialize<Test>(text, CustomJsonSettings.Instance.Value);
 			Assert.Equal(SecurityTypeText.Undefined, obj?.TextType);
 		}
 
 		[Fact]
 		public void TestEnumUnknownValueValueDeserialization() {
 			var text = "{\"intType\": 99}";
-			var obj = JsonSerializer.Deserialize<Test>(text, CustomJsonSettings.Value.Default);
+			var obj = JsonSerializer.Deserialize<Test>(text, CustomJsonSettings.Instance.Value);
 			Assert.Equal(99, (int)obj.IntType);
 		}
 
 		[Fact]
 		public void TestEnumValueSerialization() {
 			var test = new Test { TextType = SecurityTypeText.Equity };
-			var actual = System.Text.Json.JsonSerializer.Serialize<Test>(test, DefaultJsonSettings.Value.Default);
-			var expected = System.Text.Json.JsonSerializer.Serialize<Test>(test, CustomJsonSettings.Value.Default);
+			var actual = System.Text.Json.JsonSerializer.Serialize<Test>(test, DefaultJsonSettings.Instance.Value);
+			var expected = System.Text.Json.JsonSerializer.Serialize<Test>(test, CustomJsonSettings.Instance.Value);
 			Assert.Equal(expected, actual);
 		}
 	}

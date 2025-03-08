@@ -82,7 +82,7 @@ namespace Albatross.Serialization.Json {
 		}
 
 		public static TextWriter PrintJson<T>(this TextWriter writer, T data) {
-			writer.Write(JsonSerializer.Serialize(data, FormattedJsonSettings.Value.Default));
+			writer.Write(JsonSerializer.Serialize(data, FormattedJsonSettings.Instance.Value));
 			return writer;
 		}
 

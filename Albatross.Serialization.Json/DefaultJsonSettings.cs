@@ -8,24 +8,16 @@ namespace Albatross.Serialization.Json {
 	///  * default
 	///		* camel case property name
 	///		* ignore when writing null
-	///	 * alternate
-	///		* proper case property name
-	///		* ignore when writing null
 	/// </summary>
 	public class DefaultJsonSettings : IJsonSettings {
-		public JsonSerializerOptions Default { get; private set; }
-		public JsonSerializerOptions Alternate { get; private set; }
+		public JsonSerializerOptions Value { get; private set; }
 		public DefaultJsonSettings() {
-			Default = new JsonSerializerOptions {
+			Value = new JsonSerializerOptions {
 				PropertyNamingPolicy = JsonNamingPolicy.CamelCase,
-				DefaultIgnoreCondition = JsonIgnoreCondition.WhenWritingNull,
-			};
-			Alternate = new JsonSerializerOptions {
-				PropertyNamingPolicy = null,
 				DefaultIgnoreCondition = JsonIgnoreCondition.WhenWritingNull,
 			};
 		}
 		readonly static Lazy<DefaultJsonSettings> lazy = new Lazy<DefaultJsonSettings>();
-		public static DefaultJsonSettings Value => lazy.Value;
+		public static IJsonSettings Instance => lazy.Value;
 	}
 }

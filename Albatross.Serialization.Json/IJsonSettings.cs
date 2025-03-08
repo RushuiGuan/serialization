@@ -6,7 +6,7 @@ namespace Albatross.Serialization.Json {
 	/// Use the interface below to inject the serialization options.  A static property can also be use instead of dependency injection.
 	/// </summary>
 	public interface IJsonSettings {
-		JsonSerializerOptions Default { get; }
-		JsonSerializerOptions Alternate { get; }
+		JsonSerializerOptions Value { get; }
+		abstract static IJsonSettings Instance { get; }
 	}
 }

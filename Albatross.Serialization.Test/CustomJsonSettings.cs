@@ -17,10 +17,9 @@ namespace Albatross.Serialization.Test {
 		FixedIncome = 2
 	}
 	public class CustomJsonSettings : IJsonSettings {
-		public JsonSerializerOptions Default { get; private set; }
-		public JsonSerializerOptions Alternate => throw new NotSupportedException();
+		public JsonSerializerOptions Value { get; private set; }
 		public CustomJsonSettings() {
-			Default = new JsonSerializerOptions {
+			Value = new JsonSerializerOptions {
 				PropertyNamingPolicy = JsonNamingPolicy.CamelCase,
 				DefaultIgnoreCondition = JsonIgnoreCondition.WhenWritingNull,
 				Converters = {
@@ -29,6 +28,6 @@ namespace Albatross.Serialization.Test {
 			};
 		}
 		readonly static Lazy<CustomJsonSettings> lazy = new Lazy<CustomJsonSettings>();
-		public static CustomJsonSettings Value => lazy.Value;
+		public static IJsonSettings Instance => lazy.Value;
 	}
 }
