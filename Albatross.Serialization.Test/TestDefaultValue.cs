@@ -1,5 +1,4 @@
-﻿using Albatross.Reflection;
-using System.Text.Json;
+﻿using System.Text.Json;
 using Xunit;
 
 namespace Albatross.Serialization.Test {
