@@ -8,7 +8,7 @@
 		<PackageProjectUrl>$(RepositoryProjectRoot)/Albatross.Serialization</PackageProjectUrl>
 	</PropertyGroup>
 	<ItemGroup>
-		<PackageReference Include="System.Text.Json" Version="9.0.10" />
+		<PackageReference Include="System.Text.Json" Version="10.0.0" />
 	</ItemGroup>
 	<ItemGroup>
 		<None Include="..\icon.png">

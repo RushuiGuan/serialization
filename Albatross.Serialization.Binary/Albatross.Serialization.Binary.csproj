@@ -7,7 +7,7 @@
 		<PackageProjectUrl>$(RepositoryProjectRoot)/Albatross.Serialization.Binary</PackageProjectUrl>
 	</PropertyGroup>
 	<ItemGroup>
-		<PackageReference Include="Albatross.Text" Version="8.2.0" />
+		<PackageReference Include="Albatross.Text" Version="8.2.1" />
 		<PackageReference Include="MessagePack" Version="3.1.4" />
 		<PackageReference Include="MessagePackAnalyzer" Version="3.1.4">
 			<PrivateAssets>all</PrivateAssets>
