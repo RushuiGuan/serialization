@@ -6,4 +6,3 @@ A library that provides additional functionalities for serialization
 |-|-|-|
 |[Albatross.Serialization.Json](./Albatross.Serialization.Json/)|Provides additional functionalities for json serialization using System.Text.Json|[![NuGet Version](https://img.shields.io/nuget/v/Albatross.Serialization.Json)](https://www.nuget.org/packages/Albatross.Serialization.Json)|
 |[Albatross.Serialization.Binary](./Albatross.Serialization.Binary/)|Provides additional functionalities for binary serialization using MessagePack|[![NuGet Version](https://img.shields.io/nuget/v/Albatross.Serialization.Binary)](https://www.nuget.org/packages/Albatross.Serialization.Binary)|
-|[Albatross.Serialization.Yaml](./Albatross.Serialization.Yaml/)|Provides additional functionalities for Yaml serialization using YamlDotNet|[![NuGet Version](https://img.shields.io/nuget/v/Albatross.Serialization.Yaml)](https://www.nuget.org/packages/Albatross.Serialization.Yaml)|
