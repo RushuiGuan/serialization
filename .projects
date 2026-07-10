@@ -1,6 +1,6 @@
-# Packages
+# packages
 Albatross.Serialization.Json
 Albatross.Serialization.Binary
 
-# Tests
+# tests
 Albatross.Serialization.Test
