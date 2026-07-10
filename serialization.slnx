@@ -1,0 +1,15 @@
+<Solution>
+  <Folder Name="/Solution Items/">
+    <File Path=".editorconfig" />
+    <File Path=".gitattributes" />
+    <File Path=".gitignore" />
+    <File Path=".projects" />
+    <File Path="Directory.Build.props" />
+    <File Path="icon.png" />
+    <File Path="LICENSE" />
+    <File Path="README.md" />
+  </Folder>
+  <Project Path="Albatross.Serialization.Binary/Albatross.Serialization.Binary.csproj" />
+  <Project Path="Albatross.Serialization.Json/Albatross.Serialization.Json.csproj" />
+  <Project Path="Albatross.Serialization.Test/Albatross.Serialization.Test.csproj" />
+</Solution>
